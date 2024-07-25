@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps Dealer Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="tabs">
+            <button class="tab-button" onclick="openTab(event, 'BetOn6')">Bet on 6</button>
+            <button class="tab-button" onclick="openTab(event, 'HornBet')">Horn Bet</button>
+        </div>
+
+        <div id="BetOn6" class="tab-content">
+            <h2>Bet on 6</h2>
+            <div id="betOn6Feedback"></div>
+            <canvas id="betOn6ChipsCanvas" width="200" height="200"></canvas>
+            <p id="betOn6BetAmount"></p>
+            <label for="betOn6Payout">Enter payout amount:</label>
+            <input type="text" id="betOn6Payout">
+            <button onclick="checkBetOn6Payout()">Check Payout</button>
+            <div id="betOn6CorrectPayout"></div>
+            <p id="betOn6Timer">Time: 0.00 sec</p>
+            <p id="betOn6Accuracy">Accuracy: 0.00%</p>
+            <p id="betOn6Streak">Highest Streak: 0</p>
+        </div>
+
+        <div id="HornBet" class="tab-content">
+            <h2>Horn Bet</h2>
+            <div id="hornBetFeedback"></div>
+            <canvas id="hornBetDiceCanvas" width="200" height="100"></canvas>
+            <p id="hornBetAmount"></p>
+            <label for="hornBetPayout">Enter payout amount:</label>
+            <input type="text" id="hornBetPayout">
+            <button onclick="checkHornPayout()">Check Payout</button>
+            <div id="hornBetCorrectPayout"></div>
+            <p id="hornBetTimer">Time: 0.00 sec</p>
+            <p id="hornBetAccuracy">Accuracy: 0.00%</p>
+            <p id="hornBetStreak">Highest Streak: 0</p>
+        </div>
+
+        <div id="numpad">
+            <div class="numpad-row">
+                <button onclick="numpadClick(1)">1</button>
+                <button onclick="numpadClick(2)">2</button>
+                <button onclick="numpadClick(3)">3</button>
+            </div>
+            <div class="numpad-row">
+                <button onclick="numpadClick(4)">4</button>
+                <button onclick="numpadClick(5)">5</button>
+                <button onclick="numpadClick(6)">6</button>
+            </div>
+            <div class="numpad-row">
+                <button onclick="numpadClick(7)">7</button>
+                <button onclick="numpadClick(8)">8</button>
+                <button onclick="numpadClick(9)">9</button>
+            </div>
+            <div class="numpad-row">
+                <button onclick="numpadClick(0)">0</button>
+                <button onclick="numpadClear()">C</button>
+                <button onclick="numpadEnter()">Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

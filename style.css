@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+}
+
+#tabs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.tab-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+canvas {
+    margin: 10px 0;
+}
+
+#betOn6Feedback, #hornBetFeedback {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#betOn6CorrectPayout, #hornBetCorrectPayout {
+    margin: 10px 0;
+    font-size: 14px;
+    color: red;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#numpad {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.numpad-row {
+    display: flex;
+}
+
+.numpad-row button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+}
