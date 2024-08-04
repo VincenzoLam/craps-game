@@ -84,9 +84,33 @@ button:hover {
     background-color: #0056b3;
 }
 
+.correct {
+    animation: correctFeedback 1s ease;
+}
+
+@keyframes correctFeedback {
+    0% { background-color: #1e1e1e; }
+    50% { background-color: #32CD32; }
+    100% { background-color: #1e1e1e; }
+}
+
+.incorrect {
+    animation: incorrectFeedback 1s ease;
+}
+
+@keyframes incorrectFeedback {
+    0% { background-color: #1e1e1e; }
+    50% { background-color: #ff0000; }
+    100% { background-color: #1e1e1e; }
+}
+
 #numpad {
     display: flex;
     flex-direction: column;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
     margin-left: 20px;
 }
 
