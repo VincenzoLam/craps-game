@@ -74,45 +74,19 @@ input[type="text"] {
 button {
     margin: 10px 0;
     padding: 10px;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555555;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.correct {
-    animation: correctFeedback 1s ease;
-}
-
-@keyframes correctFeedback {
-    0% { background-color: #1e1e1e; }
-    50% { background-color: #32CD32; }
-    100% { background-color: #1e1e1e; }
-}
-
-.incorrect {
-    animation: incorrectFeedback 1s ease;
-}
-
-@keyframes incorrectFeedback {
-    0% { background-color: #1e1e1e; }
-    50% { background-color: #ff0000; }
-    100% { background-color: #1e1e1e; }
+    background-color: #0056b3;
 }
 
 #numpad {
     display: flex;
     flex-direction: column;
-    background-color: #333333;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
     margin-left: 20px;
 }
 
@@ -125,9 +99,4 @@ button:hover {
     height: 60px;
     margin: 5px;
     font-size: 20px;
-}
-
-.numpad-pad button:hover {
-    background-color: #555555;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
