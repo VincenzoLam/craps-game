@@ -74,14 +74,16 @@ input[type="text"] {
 button {
     margin: 10px 0;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #333333;
+    color: #ffffff;
     border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #555555;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .correct {
@@ -123,4 +125,10 @@ button:hover {
     height: 60px;
     margin: 5px;
     font-size: 20px;
+}
+
+.numpad-pad button:hover {
+    background-color: #555555;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
