@@ -13,9 +13,9 @@ function diceRoll() {
 function getValidBet(betType) {
     let bet;
     if (betType === "Horn High" || betType === "Whirl") {
-        bet = (Math.floor(Math.random() * 20) + 1) * 5; // Bet divisible by 5
+        bet = (Math.floor(Math.random() * 12) + 1) * 5; // Bet divisible by 5
     } else {
-        bet = Math.floor(Math.random() * 100) + 1; // Any bet amount
+        bet = Math.floor(Math.random() * 60) + 1; // Any bet amount
     }
     return bet;
 }
